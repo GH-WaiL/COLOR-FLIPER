@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR FLIPER</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #green {
+            background-color: green;
+        }
+        #red {
+            background-color: red;
+        }
+        #blue {
+            background-color: blue;
+        }
+        button {
+            border-radius: 25px;
+            width: 120px;
+            height: 50px;
+            margin: 10px;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s; /* transition de l'animation */ 
+        }
+        button:hover { /*animation button (ykabro w ydir shdow)*/
+            transform: scale(1.1); /* ykbar 110% */
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+        }
+        button:active {
+            transform: scale(1);/* ywali kima kan */
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+        }
+        #random {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h2 id = "title">COLOR FLIPER</h2>
+    <button id = "green" onclick = "setcolor('green')">Green</button>
+    <button id = "red" onclick = "setcolor('red')">Red</button>
+    <button id = "blue" onclick = "setcolor('blue')">Blue</button>
+    <button id = "random" onclick = "randomcolor ()">Rendom</button>
+    <script src = "index.js"></script>
+</body>
+</html>
